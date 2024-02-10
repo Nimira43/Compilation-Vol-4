@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Splash&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(1, 11, 70);
+    background: linear-gradient(146deg, rgba(20, 6, 1, 0.701), rgb(16, 18, 0), rgb(159, 3, 22) 72%, rgb(253, 128, 45));
+  color: darkred;
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Splash, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  position: absolute;
+  width: 530px;
+  height: 600px;
+  background: darkgoldenrod;
+  border-radius: 25px;
+  box-shadow: 10px 10px 40px 15px rgba(0, 0, 0, 0.5)
+}
+
+.header {
+  height: 90px;
+  background: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+h1 {
+  color: darkgoldenrod;
+  font-size: 35px;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.fas {
+  font-size: 50px;
+  margin-right: 40px;
+  User-select: none;
+}
+
+#player .fas,
+#player .choice {
+  color: darkblue;
+  cursor: pointer;
+}
+
+#computer .fas,
+#computer .choice {
+  color: darkgreen;
+}
+
+#player .fas:last-of-type,
+#computer .fas:last-of-type {
+  margin-right: 0;
+}
+
+.selected {
+  color: black !important;
+}
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 95%;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .fas {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .fas {
+    font-size: 43px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
