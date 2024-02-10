@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Ewert&family=Faster+One&family=Fredericka+the+Great&family=Inspiration&family=Nabla&family=Petit+Formal+Script&family=Sancreek&family=Smokum&family=Stint+Ultra+Condensed&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url('./news-events-img-5.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Fredericka the Great', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 30rem;
+    background-color: rgba(245, 245, 220, 0.777);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; 
+    border: 8px solid darkred;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.text-prim {
+    color: orangered;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem
+}
+
+.btn,
+.form-group input {
+    background-color: gold;
+    color: darkred;
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px;
+}
+
+.form-group input {
+    width: 180px;
+    text-align: center;
+}
+
+::placeholder {
+    color: rgba(139, 0, 0, 0.438);
+}
+
+
+.service-qual ul {
+    text-align: center;    
+}
+
+.text-sec {
+    color: orangered;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}

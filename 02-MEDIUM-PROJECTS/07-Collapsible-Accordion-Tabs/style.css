@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Architects+Daughter&family=Bangers&family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Spice&family=Cabin+Sketch&family=Caveat&family=Creepster&family=Dancing+Script&family=East+Sea+Dokdo&family=Eater&family=Ewert&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=Instrument+Serif&family=Italianno&family=Jacques+Francois+Shadow&family=Kristi&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=MedievalSharp&family=Monoton&family=Monsieur+La+Doulaise&family=Mountains+of+Christmas&family=Nabla&family=Nanum+Gothic&family=Nunito+Sans&family=Orbitron&family=Pirata+One&family=Press+Start+2P&family=Rajdhani&family=Rampart+One&family=Rubik+80s+Fade&family=Rubik+Burned&family=Rubik+Iso&family=Rubik+Maze&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Pixels&family=Rubik+Puddles&family=Rubik+Storm&family=Rubik+Vinyl&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Slackey&family=Tilt+Prism&family=UnifrakturMaguntia&family=Yanone+Kaffeesatz&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Slackey', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(
+        rgba(37, 0, 0, 0.825),
+        rgba(0, 0, 0, 0.7)),
+        url('./omid-armin-yXFUuIfB0V8-unsplash.jpg') no-repeat center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+}
+
+.absolute-container {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border: 1px dotted gold;
+    border-radius: 25px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    background-color: rgba(79, 3, 3, 0.303);
+    border: 1px dotted gold;
+    color: orangered;
+    margin: 1rem 0;
+    border-radius: 25px; 
+}
+
+.accordion-item-header,
+.accordion-item-header a {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    font-size: 20px;
+    color: gold;
+    min-height: 3.5rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.accordion-item-header:hover,
+.accordion-item-header:hover a{
+    background-color: gold;
+    color: red;
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.7rem;
+    border-top: 1px dotted gold;
+}
+
+a { 
+    color: beige;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Eagle+Lake&family=Encode+Sans+Semi+Expanded:wght@300;400;500;600;700&family=KoHo:wght@300;400;500;600;700&family=Kodchasan:wght@300;400;500;600;700&family=Margarine&family=McLaren&family=Nova+Flat&family=Square+Peg&display=swap');
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 750px;
+    margin: auto;
+    font-family: 'KoHo', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 10px;
+    width: 750px;
+    height: 430px;
+    margin-bottom: 2rem;    
+}
+
+.tabs-container {
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content {
+    display: none;
+}
+
+.btn.active {
+    background-color: beige;
+    color:darkturquoise;
+    font-weight: bolder;
+    box-shadow: none;
+    border: 1px solid darkturquoise
+}
+
+.content.active {
+    display: block;
+}
+
+h4 {
+    font-weight: bold;
+    position: relative;
+    animation: slideText 0.5s ease-out;
+}
+
+@keyframes slideText {
+    0% {
+        opacity: 0;
+        left: -200px;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}

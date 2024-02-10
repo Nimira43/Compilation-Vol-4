@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Caveat&family=Dosis&family=Fontdiner+Swanky&family=IBM+Plex+Sans&family=Merienda&family=Nosifer&family=Rubik+Maze&family=Shantell+Sans&family=Signika+Negative&family=Six+Caps&family=Stick+No+Bills&display=swap');
+
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Big Shoulders Display', sans-serif;
+    background-color:silver;
+}
+
+:root {
+    --text-shadow: 3px 2px 5px rgba(1, 1, 1, 0.5);
+}
+
+h1 {
+    color: darkred;
+    margin: 4rem 0;
+    text-shadow: var(--text-shadow);
+}
+
+h1 span {
+    background-color: black;
+    color: white;
+    padding: 0.2rem 1rem;
+    border: 5px solid goldenrod;
+    border-radius: 25px;
+}
+
+label { 
+    color: darkred;
+    font-weight: bolder;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+    border: 2px solid darkred;
+    border-radius: 5px;
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    border: 2px solid darkred;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    text-shadow: var(--text-shadow);
+}
+
+.element:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 100px 9px darkgoldenrod;
+}
+
+.btn {
+    background-color: goldenrod;
+    color: darkred;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 4px 6px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.btn:hover {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: darkred;
+    color: goldenrod;
+}
+
+.btn:active {
+    transform: scale(0.95); 
+}

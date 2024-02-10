@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="new.css">
+    <title>Tip Calculator V2.0</title>
+</head>
+<body>
+    <div class="main-container">
+        
+        <h1 class="title-heading">
+            Tip  Calculator
+        </h1>
+        
+        <div id="container" class="card">
+
+            <div id="calculator" class="calculator">
+                <h4>Tip Calculator</h4>
+                <div class="heading">
+                    <label for="bill">Your Bill</label>
+                    <input type="text" id="bill" placeholder="Bill amount">
+                </div>
+                <div class="heading margin-mod">
+                    <label for="people-amount">Paying Customers</label>
+                    <input type="number" id="people-amount" placeholder="Number of people">
+                </div>
+            </div>
+        
+            <div class="input-fields">
+                <h4 class="heading">Service</h4>
+                <select id="service-qual" class="service-qual">
+                    <option value="0" disabled selected>Choose your option</option>
+                    <option value="0.3">30% Outstanding</option>
+                    <option value="0.2">20% Excellent</option>
+                    <option value="0.15">15% Good</option>
+                    <option value="0.1">10% Reasonable</option>
+                    <option value="0.05">5% Average</option>
+                </select>
+                <button class="btn" type="submit">Calculate</button>
+            </div>
+            
+            <div class="summary">
+                <h4 class="heading">Bill Summary</h4>
+                <ul id="result" class="results">
+                    <li>Overall Tip: <span id="tip"></span></li>
+                    <li>Tip per person: <span id="div-tip"></span></li>
+                    <li>Share of Bill & Tip: <span id="grand-total"></span></li>
+                    <li>Total bill with tip: <span id="total-bill-tip"></span></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

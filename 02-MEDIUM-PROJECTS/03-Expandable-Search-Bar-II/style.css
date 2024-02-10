@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Caveat&family=Dosis&family=Fontdiner+Swanky&family=IBM+Plex+Sans&family=Merienda&family=Nosifer&family=Rubik+Maze&family=Shantell+Sans&family=Signika+Negative&family=Six+Caps&family=Stick+No+Bills&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    background-color: beige;
+    color: orangered;
+    
+}
+
+
+nav {
+    height: 60px;
+    background-color: orangered;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+}    
+
+p {
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h3 {
+    color: darkred;
+    margin: 2rem;
+    text-align: center;
+}
+
+input {
+    width: 0px;
+    border: none;
+    outline: none;
+}
+
+.fas {
+    color: darkred;
+    font-size: 1.3rem;
+    padding: 10px 5px;
+}
+
+.fas:hover {
+    cursor: pointer;
+    color: darkred;
+}
+
+input.active-search {
+    background-color: beige;
+    color: orangered;
+    font-family: inherit;
+    font-weight: bolder;
+    width: 80px;
+    border-radius: 12px;
+    border: 2px solid darkred;
+    padding: 5px 10px;
+    transition: 0.3s width ease-in;
+    font-size: 16px;
+    box-shadow: 0 1px 5px 2px rgba(199, 49, 3, 0.3);
+}
+
+::placeholder {
+    color: orangered;
+    opacity: 0.5;
+}
+
+input.active-search:hover {
+    width: 120px;
+    transition: 0.3s width ease-in;
+}
+
+input.active-search:focus {
+    width: 300px;
+    transition: 0.6s width ease-in;
+}

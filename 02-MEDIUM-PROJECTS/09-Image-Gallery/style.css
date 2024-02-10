@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Architects+Daughter&family=Bangers&family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Spice&family=Cabin+Sketch&family=Caveat&family=Creepster&family=Dancing+Script&family=East+Sea+Dokdo&family=Eater&family=Ewert&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=Instrument+Serif&family=Italianno&family=Jacques+Francois+Shadow&family=Kristi&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=MedievalSharp&family=Monoton&family=Monsieur+La+Doulaise&family=Mountains+of+Christmas&family=Nabla&family=Nanum+Gothic&family=Nunito+Sans&family=Orbitron&family=Pirata+One&family=Press+Start+2P&family=Rajdhani&family=Rampart+One&family=Rubik+80s+Fade&family=Rubik+Burned&family=Rubik+Iso&family=Rubik+Maze&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Pixels&family=Rubik+Puddles&family=Rubik+Storm&family=Rubik+Vinyl&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Slackey&family=Tilt+Prism&family=UnifrakturMaguntia&family=Yanone+Kaffeesatz&display=swap');
+
+*,
+::before,
+::after { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --transition-speed: 0.5s;
+    --btn-bg-color: goldenrod;
+    --font-color: darkred;
+}
+
+body {
+    /* width: 100%;
+    height: 100vh;
+    font-family: 'Shadows Into Light', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: var(--transition-speed) ease; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+.img-container {
+    margin-top: 50px;
+    background-color: sienna;
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.img {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    top: -5vh;
+    left: -5vw;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+}
+
+.img.active {
+    opacity: 1;
+}
+
+.arrow-btn {
+    position: fixed;
+    bottom: 10vh;
+}
+
+.left-arrow {
+    left: calc(50vw - 50px)
+}
+
+.right-arrow {
+    right: calc(50vw - 50px)
+}
+
+.btn {
+    background-color: var(--btn-bg-color);
+    color: var(--font-color);
+}
+
+.animateTransition {
+    animation: swing var(--transition-speed) ease;
+}
+
+@keyframes swing {
+    0% {
+        transform: translateX(5px);
+        filter: blur(4px);
+    }
+    50% {
+        transform: translateX(-5px);
+        filter: blur(2px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}

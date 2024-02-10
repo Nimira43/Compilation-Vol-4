@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Ewert&family=Faster+One&family=Fredericka+the+Great&family=Inspiration&family=Nabla&family=Petit+Formal+Script&family=Sancreek&family=Smokum&family=Stint+Ultra+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredericka the Great', sans-serif;
+    list-style-type : none;
+    text-decoration: none;
+    border: none;
+}
+
+.main-container,
+.card,
+.calculator,
+.input-fields,
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.5)),
+        url('./francesco-ungaro-o0o-zwqvtGc-unsplash.jpg') no-repeat center; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+}
+
+.card {
+    width: 670px;
+    height: 600px;
+    background-color: transparent;
+    position: absolute;
+    padding: 20px;
+    border: 8px solid black;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.heading input {
+    display: block;
+    background-color: transparent;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 3px;
+    color: darkred;
+    outline: none;
+}
+
+.margin-mod {
+    margin-top: 5px;
+}
+
+.calculator,
+.input-fields,
+.summary {
+    width: 95%;
+    left: 5px;
+    background-color: gold;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    color: darkred;
+    font-weight: bold;
+    border: 5px solid orangered;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.calculator {
+    height: 200px;
+    top: 5px;
+}
+
+::placeholder {
+    opacity: 0.6;
+    color: darkred;
+}
+
+.input-fields {
+    height: 140px;
+    top: 205px;
+}
+
+.service-qual {
+    background-color: transparent;
+}
+
+.service-qual option {
+    font-weight: bolder;
+    color: darkred;
+}
+
+.btn {
+    background-color: darkred;
+    color: gold;
+    padding: 4px 8px;
+    margin-top: 7px;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.summary {
+    height: 240px;
+    left: 5px;    
+}
+
+.results li {
+    margin-bottom: 8px;
+}
+
+.results li span{
+    font-size: 18px;
+    font-weight: normal;
+    background-color: darkred;
+    color: gold;
+    padding: 2px 4px;
+    border-radius: 8px;
+    
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
