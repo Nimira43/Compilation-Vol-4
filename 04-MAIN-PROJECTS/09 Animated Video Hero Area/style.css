@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Berkshire+Swash&family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Edu+TAS+Beginner:wght@400;500;600;700&family=Fredericka+the+Great&family=Handlee&family=Indie+Flower&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Just+Another+Hand&family=Lora:wght@400;500;600;700&family=Mansalva&family=Monsieur+La+Doulaise&family=Nabla&family=Press+Start+2P&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Rock+Salt&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Tangerine:wght@400;700&family=Teko:wght@300;400;500;600;700&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower',sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: bg 4s linear infinite;
+    overflow: hidden;
+}
+
+.slider-container {
+    margin-bottom: 20px;
+}
+
+.slider-container h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.slider-container p {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.slider-container span {
+    color: skyblue;
+} 
+
+.btn {
+    background-color: transparent;
+    color: beige;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: 5px solid beige;
+    margin-top:30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: skyblue;
+    border: 5px solid skyblue;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.slider video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+@keyframes bg {
+    0%, 100% {
+        
+        background-color: rgba(0, 0, 0, 0.601);
+    }
+
+    32% {
+        background-color: rgba(255, 68, 0, 0.601);
+    }
+
+    64% {
+        background-color: rgba(0, 0, 0, 0.601);
+    }
+
+    96% {
+        
+        background-color: rgba(255, 68, 0, 0.801);
+    }
+ 
+}
+
+
+
+
