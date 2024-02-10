@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Cute+Font&family=Farsan&family=Jacques+Francois+Shadow&family=Jolly+Lodger&family=Moo+Lah+Lah&family=Offside&family=Poor+Story&family=Rationale&family=Rubik+Glitch&family=Stalemate&family=Stalinist+One&family=Tulpen+One&family=Vujahday+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --prim-col: beige;
+    --sec-col: orangered;
+}
+
+body {
+    font-family: 'Farsan', san-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+nav ul li a {
+    color: var(--prim-col);
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.menu-nav-right {
+    color: var(--sec-col);
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    background-image: url(./pexels-simone-defendi-12762122.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: right 1.4s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes right {
+    0% {
+        background-position: -1000px;
+        left: 10%;
+        opacity: 0;
+    }
+    100% {
+        background-position: 0px;
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.left,
+.right {
+    width: 50%;
+    position: relative;
+}
+
+.left {
+    background-image: url(./pexels-simone-defendi-12762122.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--prim-col);
+    text-shadow: 2px 2px 5px var(--sec-col);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 24px 6px;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    animation: left 2s ease forwards;
+    animation-delay: 0.3s;
+    transition: all 0.5s ease;
+}
+
+@keyframes left {
+    0% { 
+        opacity: 0;
+        top: 60%;        
+    }
+    100% { 
+        opacity: 1;
+        top: 50%;        
+    }
+}
+
+.left h1:hover {
+    cursor: pointer;
+    box-shadow: inset -10px 5px 100px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+    background-color: var(--prim-col);
+}
+
+.right h1 {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50vh;
+    font-size: 8rem;
+    background-image: url(./pexels-simone-defendi-12762122.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    background-attachment: fixed;
+    margin-left: 40px;
+    color: transparent;
+    animation: right 2s ease forwards;
+    animation-delay: 0.3s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer a {
+    color: var(--sec-col);
+}
+
+.copy {
+    color: var(--prim-col);
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.social {
+    padding-right: 2rem;
+}
+
+.social a {
+    padding: 0 0.2rem;
+    transition: 0.9s ease;
+}
+
+.social a:hover {
+    cursor: pointer;
+    transition: 0.9s ease;
+}
+
+.social a:first-child:hover {
+    color: black;    
+}
+
+.social a:nth-child(2):hover {
+    color: #6441a5;
+}
+
+.social a:nth-child(3):hover {
+    color: #7289da;
+}
+.social a:last-child:hover {
+    color: firebrick;
+}
+
+@media (max-width:1024px) {
+    .left h1 {
+        font-size: 2.5rem;
+    }
+    
+    .right h1 {
+        font-size: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    footer a {
+        padding: 0 0.5rem;
+    }
+
+    @keyframes right {
+        0% {
+            background-position: -1000px;
+            left: 100%;
+            opacity: 0;
+        }
+
+        100% {
+            background-position: 0px;
+            left: 20%;
+            opacity: 1;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .left h1 {
+        font-size: 2rem;
+    }
+    
+    .right h1 {
+        font-size: 4rem;
+        margin-left: 2%;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    footer a {
+        padding: 0 0.5rem;
+    }
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    font-size: 1rem;
+}
+
+    @keyframes right {
+        0% {
+            background-position: -1000px;
+            left: 100%;
+            opacity: 0;
+        }
+
+        100% {
+            background-position: 0px;
+            left: 20%;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav li {
+        font-size: 1.5rem;
+    }
+
+    .left h1 {
+        position: relative;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .right h1 {
+        font-size: 2rem;
+        margin-left: 32%;
+    }
+
+    .social a {
+        padding: 0.5rem 0;
+    }
+
+    .copy {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    @keyframes right {
+        0% {
+            background-position: -1000px;
+            left: 50%;
+            opacity: 0;
+        }
+
+        100% {
+            background-position: 0px;
+            left: 0%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes left {
+        0% {
+            opacity: 0;
+            top: 20%;           
+        }
+
+        100% {
+            opacity: 1;
+            top: 20%;
+            left: 50%;
+        }
+    }
+}

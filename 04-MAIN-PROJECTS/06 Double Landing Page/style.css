@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Ewert&family=Faster+One&family=Fredericka+the+Great&family=Inspiration&family=Nabla&family=Petit+Formal+Script&family=Sancreek&family=Smokum&family=Stint+Ultra+Condensed&display=swap');
+
+body {
+    height: 100vh;
+    font-family: 'Ewert', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 480px;
+}
+
+.btn {
+    padding: 20px 28px;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 23px;
+    letter-spacing: 2px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    white-space: nowrap;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+
+.deadpool {
+    color: gold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    letter-spacing: 12px;
+}
+
+.split.left {
+    position: absolute;
+    left: 0;
+    background-color: red;
+    background-image: url('./pngimg.com\ -\ deadpool_PNG95.png') ;
+    background-size: cover;
+}
+
+.btn-deadpool {
+    border: 5px solid gold;
+    color: gold;
+    background-color: red;
+}
+
+.btn-deadpool:hover {
+    border: 5px solid black;
+    color: red;
+    background-color: gold;
+}
+
+.batman {
+    color: red;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    letter-spacing: 12px;
+}
+
+.split.right {
+    position: absolute;
+    right: 0;
+    background-color: gold;
+    background-image: url('./pngimg.com\ -\ batman_PNG84.png');
+    background-size: cover;
+}
+
+.btn-batman {
+    border: 5px solid red;
+    color: red;
+    background-color: gold;
+}
+
+.btn-batman:hover {
+    border: 5px solid black;
+    color: gold;
+    background-color: red;
+}
+
+.active-left .left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+.active-right .right {
+    width: 75%;
+}
+.active-right .left {
+    width: 25%;
+}
+
+.left,
+.right {
+    transition: width 2s ease-in-out;
+}
+
