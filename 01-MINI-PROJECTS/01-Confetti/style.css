@@ -1,0 +1,17 @@
+body {
+    background: rgb(1, 11, 70);
+    background: linear-gradient(146deg, rgba(20, 6, 1, 0.701), rgb(16, 18, 0), rgb(159, 3, 22) 72%, rgb(253, 128, 45));
+    color: darkred;
+    background-position: cover;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: yellow;
+    position: absolute;
+    font-size: 100px;
+}
