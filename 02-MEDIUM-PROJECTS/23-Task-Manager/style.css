@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #222;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: khaki;
+    text-shadow: 1px 1px 0 orangered,
+                 2px 2px 0 darkorange,
+                 3px 3px 0 black;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+    font-family: inherit;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: orangered;
+    background-color: khaki;
+    border: 1px solid orangered;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    color: khaki;
+    background-color: orangered;
+    border: 1px solid khaki;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.task-item {
+    max-width: 260px;
+    height: 25px;
+    margin: 5px 0;
+    background-color: khaki;
+    border-radius: 8px;
+    border: 1px solid orangered;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 3px;
+    animation: animIn 0.3s ease;
+}
+
+@keyframes animIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.completed {
+    background-color: beige;
+}
+
+    
