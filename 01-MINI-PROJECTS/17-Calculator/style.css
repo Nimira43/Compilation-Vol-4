@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap'); 
+
+body {
+    font-family: 'Rubik Iso', sans-serif;
+    position: absolute;
+    background-color: darkred;
+    color: darkgoldenrod;
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px;
+}
+
+h1 { 
+    text-align: center;
+    font-weight: bolder;
+    border: 5px solid black;
+    border-width: 5px;
+    border-radius: 50px;
+    padding: 4px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
